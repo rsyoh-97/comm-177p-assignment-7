@@ -1,0 +1,7 @@
+# functions should be readable
+# name of the function should be clear and should be devoted to fairly singular task 
+
+# write a script that hits the api, grabs json, loops through each member, figures out who the top 5 people in each party are that are most likely to vote against own party
+# sorting, grouping (dictionary or list) by party, printing out a report 
+# use functions 
+
