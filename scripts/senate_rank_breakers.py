@@ -31,26 +31,25 @@ def sort(members):
             top_five_repub = sorted_repub[0:5]
     sorted_members.append(top_five_dem)
     sorted_members.append(top_five_repub)
-    print(sorted_members)
     return sorted_members
 
 def print_names(sorted_members):
-        print("Democrat")
+        print("Democrat:")
         for x in sorted_members[0]:
             first_name_dem = x["first_name"]
             last_name_dem = x["last_name"]
             state_dem = x["state"]
             against_pct_dem = str(x["votes_against_party_pct"])
-            txt = "{} {} ({}) votes against the party {}% of the time" 
+            txt = "{} {} ({}) votes against the party {}% of the time." 
             print(txt.format(first_name_dem, last_name_dem, state_dem, against_pct_dem))
             
-        print('\n'+ "Republican")
+        print('\n'+ "Republican:")
         for x in sorted_members[1]:
             first_name_repub = x["first_name"]
             last_name_repub = x["last_name"]
             state_repub = x["state"]
             against_pct_repub = str(x["votes_against_party_pct"])
-            txt = "{} {} ({}) votes against the party {}% of the time" 
+            txt = "{} {} ({}) votes against the party {}% of the time." 
             print(txt.format(first_name_repub, last_name_repub, state_repub, against_pct_repub))
 
         data = {}
